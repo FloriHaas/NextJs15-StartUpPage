@@ -12,11 +12,10 @@ export default async function Home({
     {
       _createdAt: new Date(),
       views: "55",
-      author: { _id: 1 },
+      author: { _id: 1, name: "Florian" },
       _id: 1,
       description: "This is the description",
-      image:
-        "https://img.freepik.com/free-vector/startup-abstract-concept_335657-3029.jpg?t=st=1734802430~exp=1734806030~hmac=1c1cb4fb5f19e3ee20b1b506bf1fb8b1463a5b41319d2a1f6d8043c7b90cf9f3&w=1060",
+      image: "https://i.ytimg.com/vi/m8Rci8lXNdY/maxresdefault.jpg",
       category: "Robots",
       title: "We Robots",
     },
