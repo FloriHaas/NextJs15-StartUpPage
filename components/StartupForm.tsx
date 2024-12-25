@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import MDEditor from "@uiw/react-md-editor";
@@ -11,7 +11,10 @@ const StartupForm = () => {
   const [errors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState("");
 
-  const isPending = false;
+  const [state, formAction, isPending] = useActionState(handleFormSubmit, {
+    error: "",
+    status: "INITIAL",
+  });
 
   return (
     <form action={() => {}} className="startup-form">
