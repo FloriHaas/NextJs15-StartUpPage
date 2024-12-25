@@ -13,5 +13,5 @@ token,
 });
 
 if(!writeClient.config().token) {
-  throw new Error("WWrite Token not found.");
+  throw new Error("Write Token not found.");
 }

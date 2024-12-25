@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import MDEditor from "@uiw/react-md-editor";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 
 const StartupForm = () => {
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState("");
 
   const isPending = false;
@@ -27,15 +27,14 @@ const StartupForm = () => {
           placeholder="Startup Title"
         />
 
-        {errors.description && (
-          <p className="startup-form_error">{errors.title}</p>
-        )}
+        {errors.title && <p className="startup-form_error">{errors.title}</p>}
       </div>
+
       <div>
         <label htmlFor="description" className="startup-form_label">
           Description
         </label>
-        <Input
+        <Textarea
           id="description"
           name="description"
           className="startup-form_textarea"
@@ -47,6 +46,7 @@ const StartupForm = () => {
           <p className="startup-form_error">{errors.description}</p>
         )}
       </div>
+
       <div>
         <label htmlFor="category" className="startup-form_label">
           Category
@@ -56,13 +56,14 @@ const StartupForm = () => {
           name="category"
           className="startup-form_input"
           required
-          placeholder="Startup Category (Tech, Health, Education ...)"
+          placeholder="Startup Category (Tech, Health, Education...)"
         />
 
         {errors.category && (
           <p className="startup-form_error">{errors.category}</p>
         )}
       </div>
+
       <div>
         <label htmlFor="link" className="startup-form_label">
           Image URL
