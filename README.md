@@ -71,7 +71,7 @@ Lists all startups with:
 - Short description
 - Links to detailed pages for each startup
 
-![Profile Page](documentation\screenshots\own-startups.png)
+![Profile Page](documentation/screenshots/own-startups.png)
 
 ---
 ### **Startup Detail Page**
@@ -82,27 +82,27 @@ Displays detailed information about a specific startup, including:
 - Tags/categories
 - Pitch
 
-![Startup Detail](documentation\screenshots\detail-page.png)
+![Startup Detail](documentation/screenshots/detail-page.png)
 
 ---
 ### **Startup Detail Page**
 Counts views in real-time
 
-![View Counter](documentation\screenshots\view-counter.png)
+![View Counter](documentation/screenshots/view-counter.png)
 
 ---
 
 ### **GitHub Login**
 Provides a secure authentication mechanism using GitHub OAuth. Once logged in, users can access additional features like creating startups.
 
-![GitHub Login](documentation\screenshots\github.png)
+![GitHub Login](documentation/screenshots/github.png)
 
 ---
 
 ### **Search Bar**
 To search for startups and users
 
-![Searchbar](documentation\screenshots\searchbar.png)
+![Searchbar](documentation/screenshots/searchbar.png)
 
 ---
 
@@ -111,7 +111,7 @@ Allows authenticated users to create new startups with:
 - **Name, description, and category input**
 - A powerful **Markdown Editor** for rich formatting.
 
-![Submitform](documentation\screenshots\submitform.png)
+![Submitform](documentation/screenshots/submitform.png)
 
 ---
 
